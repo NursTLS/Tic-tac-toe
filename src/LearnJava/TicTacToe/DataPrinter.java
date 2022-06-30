@@ -23,12 +23,12 @@ package LearnJava.TicTacToe;
  * @author Nursultan
  * Sheralievnursultan@gmail.com
  */
-public class Launcher {
-    public static void main(String[] args) {
+public class DataPrinter {
+    public void printMappingTable() {
 
-        final Game game = new Game(
-                new DataPrinter(), new ComputerMove(), new UserMove(), new WinnerVeryfier(), new DrawVeryfier()
-        );
-        game.Play();
+    }
+
+    public void printGameTable(final GameTable gameTable) {
+
     }
 }

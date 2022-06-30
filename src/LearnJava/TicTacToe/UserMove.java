@@ -23,12 +23,8 @@ package LearnJava.TicTacToe;
  * @author Nursultan
  * Sheralievnursultan@gmail.com
  */
-public class Launcher {
-    public static void main(String[] args) {
+public class UserMove {
+    public void make(final GameTable gameTable) {
 
-        final Game game = new Game(
-                new DataPrinter(), new ComputerMove(), new UserMove(), new WinnerVeryfier(), new DrawVeryfier()
-        );
-        game.Play();
     }
 }
