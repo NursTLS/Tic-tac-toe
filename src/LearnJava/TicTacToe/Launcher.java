@@ -19,6 +19,8 @@
 
 package LearnJava.TicTacToe;
 
+import LearnJava.TicTacToe.component.*;
+
 /**
  * @author Nursultan
  * Sheralievnursultan@gmail.com

@@ -17,7 +17,9 @@
  *
  */
 
-package LearnJava.TicTacToe;
+package LearnJava.TicTacToe.component;
+
+import LearnJava.TicTacToe.model.GameTable;
 
 /**
  * @author Nursultan

@@ -17,14 +17,20 @@
  *
  */
 
-package LearnJava.TicTacToe;
+package LearnJava.TicTacToe.component;
+
+import LearnJava.TicTacToe.model.GameTable;
 
 /**
  * @author Nursultan
  * Sheralievnursultan@gmail.com
  */
-public class DrawVeryfier {
-    public boolean isDraw(final GameTable gameTable) {
+public class WinnerVeryfier {
+    public boolean isUserWin(final GameTable gameTable) {
+        return false;
+    }
+
+    public boolean isComputerWin(final GameTable gameTable) {
         return false;
     }
 }

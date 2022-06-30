@@ -17,18 +17,16 @@
  *
  */
 
-package LearnJava.TicTacToe;
+package LearnJava.TicTacToe.component;
+
+import LearnJava.TicTacToe.model.GameTable;
 
 /**
  * @author Nursultan
  * Sheralievnursultan@gmail.com
  */
-public class DataPrinter {
-    public void printMappingTable() {
-
-    }
-
-    public void printGameTable(final GameTable gameTable) {
-
+public class DrawVeryfier {
+    public boolean isDraw(final GameTable gameTable) {
+        return false;
     }
 }

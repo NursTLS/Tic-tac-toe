@@ -17,18 +17,11 @@
  *
  */
 
-package LearnJava.TicTacToe;
+package LearnJava.TicTacToe.model;
 
 /**
  * @author Nursultan
  * Sheralievnursultan@gmail.com
  */
-public class WinnerVeryfier {
-    public boolean isUserWin(final GameTable gameTable) {
-        return false;
-    }
-
-    public boolean isComputerWin(final GameTable gameTable) {
-        return false;
-    }
+public class GameTable {
 }

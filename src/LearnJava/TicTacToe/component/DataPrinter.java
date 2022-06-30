@@ -17,11 +17,20 @@
  *
  */
 
-package LearnJava.TicTacToe;
+package LearnJava.TicTacToe.component;
+
+import LearnJava.TicTacToe.model.GameTable;
 
 /**
  * @author Nursultan
  * Sheralievnursultan@gmail.com
  */
-public class GameTable {
+public class DataPrinter {
+    public void printMappingTable() {
+
+    }
+
+    public void printGameTable(final GameTable gameTable) {
+
+    }
 }
