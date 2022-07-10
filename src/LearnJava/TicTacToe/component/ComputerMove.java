@@ -19,7 +19,10 @@
 
 package LearnJava.TicTacToe.component;
 
+import LearnJava.TicTacToe.model.Cell;
 import LearnJava.TicTacToe.model.GameTable;
+
+import java.util.Random;
 
 /**
  * @author Nursultan
@@ -27,6 +30,15 @@ import LearnJava.TicTacToe.model.GameTable;
  */
 public class ComputerMove {
     public void make(final GameTable gameTable) {
-
+        final Random random = new Random();
+        while (true) {
+            final int row = random.nextInt(3);
+            final int col = random.nextInt(3);
+            final Cell randomCell = new Cell(row, col);
+            if (gameTable.isEmpty(randomCell)) {
+                gameTable.setSign(randomCell, '0');
+                return;
+            }
+        }
     }
 }
