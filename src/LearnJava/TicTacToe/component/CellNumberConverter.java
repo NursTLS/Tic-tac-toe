@@ -17,25 +17,34 @@
  *
  */
 
-package LearnJava.TicTacToe;
+package LearnJava.TicTacToe.component;
 
-import LearnJava.TicTacToe.component.*;
+import LearnJava.TicTacToe.model.Cell;
 
 /**
  * @author Nursultan
  * Sheralievnursultan@gmail.com
  */
-public class Launcher {
-    public static void main(String[] args) {
+public class CellNumberConverter {
 
-        final CellNumberConverter cellNumberConverter = new CellNumberConverter();
-        final Game game = new Game(
-                new DataPrinter(cellNumberConverter),
-                new ComputerMove(),
-                new UserMove(cellNumberConverter),
-                new WinnerVeryfier(),
-                new DrawVeryfier()
-        );
-        game.Play();
+    private final char[][] mapping = {
+            {'7', '8', '9'},
+            {'4', '5', '6'},
+            {'1', '2', '3'}
+    };
+
+    public Cell toCell(final char number) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (mapping[i][j] == number) {
+                    return new Cell(i, j);
+                }
+            }
+        }
+        return null;
+    }
+
+    public char toNumber(final Cell cell) {
+        return mapping[cell.getRow()][cell.getCol()];
     }
 }
