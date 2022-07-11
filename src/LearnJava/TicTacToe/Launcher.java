@@ -20,15 +20,17 @@
 package LearnJava.TicTacToe;
 
 import LearnJava.TicTacToe.component.*;
+import LearnJava.TicTacToe.component.keypad.DesktopNumericKeypadCellNumberConverter;
 
 /**
  * @author Nursultan
  * Sheralievnursultan@gmail.com
  */
-public class Launcher {
-    public static void main(String[] args) {
+public final class Launcher {
 
-        final CellNumberConverter cellNumberConverter = new CellNumberConverter();
+    public static void main(final String[] args) {
+
+        final CellNumberConverter cellNumberConverter = new DesktopNumericKeypadCellNumberConverter();
         final Game game = new Game(
                 new DataPrinter(cellNumberConverter),
                 new ComputerMove(),
