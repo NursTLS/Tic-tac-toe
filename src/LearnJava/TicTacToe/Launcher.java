@@ -20,7 +20,7 @@
 package LearnJava.TicTacToe;
 
 import LearnJava.TicTacToe.component.*;
-import LearnJava.TicTacToe.component.keypad.DesktopNumericKeypadCellNumberConverter;
+import LearnJava.TicTacToe.component.keypad.TerminalNumericKeypadCellNumberConverter;
 
 /**
  * @author Nursultan
@@ -30,7 +30,7 @@ public final class Launcher {
 
     public static void main(final String[] args) {
 
-        final CellNumberConverter cellNumberConverter = new DesktopNumericKeypadCellNumberConverter();
+        final CellNumberConverter cellNumberConverter = new TerminalNumericKeypadCellNumberConverter();
         final Game game = new Game(
                 new DataPrinter(cellNumberConverter),
                 new ComputerMove(),
